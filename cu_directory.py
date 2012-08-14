@@ -14,10 +14,12 @@ def parse_uni(uni):
             temp = []
             for j, grandkid in enumerate(child):
                 temp.extend(grandkid)
+                # Adds key to name (doesn't exist in html)
                 if i == 0:
                     mydict[u'Name'] = temp[0]
                     temp = []
                 elif j % 2:
+                    # Strip a href html surrounding email
                     if temp[0] == u'Email:':
                         temp[1] = temp[1].contents[0]
                     mydict[temp[0].rstrip(':')] = temp[1]
