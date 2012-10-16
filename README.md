@@ -1,12 +1,7 @@
 Columbia Directory Parser
 =========================
 
-Simple parser that works with the Columbia directory
-
-Dependencies
-============
-
-    pip install beautifulsoup4
+Wrapper for Columbia University directory. Prints directory information in JSON.
 
 Usage
 =====
